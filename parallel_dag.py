@@ -4,6 +4,7 @@ from airflow.operators.python_operator import PythonOperator
 
 from datetime import datetime
 
+# Added additional line to test whether dags are pulled automatically by sidecar into webserver
 default_args = {
     'start_date': datetime(2019, 1, 1),
     'owner': 'Airflow',
